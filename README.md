@@ -1,286 +1,112 @@
-\# Personal Medical Records App
-
-
+# Personal Medical Records App
 
 An Android application for managing personal medical records, prescriptions, test results, medication reminders, and follow-up appointments.
 
-
-
 This application helps users store and manage healthcare information conveniently on mobile devices.
 
+## Technologies
 
+* Kotlin
+* Android Studio
+* Room Database
+* RecyclerView
+* Material Design
+* Android Jetpack Components
 
-\## Technologies
+## Features
 
+### Authentication
 
+* User Registration
+* Login
+* Account Management
 
-\* Kotlin
+### Medical Records
 
-\* Android Studio
+* Create Medical Records
+* Update Medical Records
+* View Medical History
+* Search Medical Records
 
-\* Room Database
+### Prescription Management
 
-\* RecyclerView
+* Manage Prescriptions
+* View Prescription Details
 
-\* Material Design
+### Laboratory Test Results
 
-\* Android Jetpack Components
+* Store Test Results
+* View Examination History
 
+### Appointment Management
 
+* Schedule Follow-up Appointments
+* Manage Appointment Information
 
-\## Features
+### Medication Reminders
 
+* Create Medication Reminders
+* Manage Reminder Schedules
 
+### Statistics
 
-\### Authentication
+* Medical Record Statistics
+* Healthcare Data Overview
 
-
-
-\* User Registration
-
-\* Login
-
-\* Account Management
-
-
-
-\### Medical Records
-
-
-
-\* Create Medical Records
-
-\* Update Medical Records
-
-\* View Medical History
-
-\* Search Medical Records
-
-
-
-\### Prescription Management
-
-
-
-\* Manage Prescriptions
-
-\* View Prescription Details
-
-
-
-\### Laboratory Test Results
-
-
-
-\* Store Test Results
-
-\* View Examination History
-
-
-
-\### Appointment Management
-
-
-
-\* Schedule Follow-up Appointments
-
-\* Manage Appointment Information
-
-
-
-\### Medication Reminders
-
-
-
-\* Create Medication Reminders
-
-\* Manage Reminder Schedules
-
-
-
-\### Statistics
-
-
-
-\* Medical Record Statistics
-
-\* Healthcare Data Overview
-
-
-
-\## Architecture
-
-
-
-The application follows a local database architecture:
-
-
-
-```text
-
-UI Layer
-
-&#x20;   ↓
-
-Room Database
-
-&#x20;   ↓
-
-Local Storage
-
-```
-
-
-
-\## Project Structure
-
-
-
-```text
-
-app/
-
-├── UI/
-
-├── data/
-
-├── model/
-
-└── res/
-
-
-
-gradle/
-
-```
-
-
-
-\## Database
-
-
+## Database
 
 The application uses Room Database with the following entities:
 
+* User
+* Patient
+* BenhAn
+* DonThuoc
+* KetQuaXetNghiem
+* LichHen
+* NhacNho
 
+## Screenshots
 
-\* User
+### Login Screen
 
-\* Patient
+![Login](screenshots/login.png)
 
-\* BenhAn (Medical Record)
+### Home Screen
 
-\* DonThuoc (Prescription)
+![Home](screenshots/home.png)
 
-\* KetQuaXetNghiem (Test Result)
+### Medical Records
 
-\* LichHen (Appointment)
+![Medical Records](screenshots/medical_record.png)
 
-\* NhacNho (Reminder)
+### Prescription Management
 
+![Prescription](screenshots/prescription.png)
 
+### Statistics
 
-\## Screenshots
+![Statistics](screenshots/statistics.png)
 
+## Installation
 
+### Requirements
 
-\### Login Screen
+* Android Studio
+* Android SDK
+* Gradle
 
-
-
-!\[Login](screenshots/login.png)
-
-
-
-\### Home Screen
-
-
-
-!\[Home](screenshots/home.png)
-
-
-
-\### Medical Records
-
-
-
-!\[Medical Records](screenshots/medical\_record.png)
-
-
-
-\### Prescription Management
-
-
-
-!\[Prescription](screenshots/prescription.png)
-
-
-
-\### Statistics
-
-
-
-!\[Statistics](screenshots/statistics.png)
-
-
-
-\## Installation
-
-
-
-\### Requirements
-
-
-
-\* Android Studio
-
-\* Android SDK
-
-\* Gradle
-
-
-
-\### Clone Repository
-
-
+### Clone Repository
 
 ```bash
-
 git clone https://github.com/thangndt201/personal-medical-records-app.git
-
 ```
 
-
-
-\### Open Project
-
-
+### Open Project
 
 Open the project using Android Studio.
 
+### Build and Run
 
-
-\### Build and Run
-
-
-
-1\. Sync Gradle
-
-2\. Build Project
-
-3\. Run on Emulator or Android Device
-
-
-
-\## Author
-
-
-
-Nguyen Duc Thang
-
-
-
-Information Technology Student
-
-
-
+1. Sync Gradle
+2. Build Project
+3. Run on Emulator or Android Device
