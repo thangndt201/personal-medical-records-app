@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Mã hồ sơ -->
+        <TextView
+            android:id="@+id/tvMaHoSo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã hồ sơ: HS001"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Ngày xét nghiệm -->
+        <TextView
+            android:id="@+id/tvNgayXN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày xét nghiệm: 20/12/2025"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#03B6CA"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Loại xét nghiệm -->
+        <TextView
+            android:id="@+id/tvLoaiXN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại xét nghiệm: Máu tổng quát"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Chỉ số -->
+        <TextView
+            android:id="@+id/tvChiSo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chỉ số: Glucose"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Kết quả -->
+        <TextView
+            android:id="@+id/tvKetQua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kết quả: 5.8 mmol/L"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Ghi chú -->
+        <TextView
+            android:id="@+id/tvGhiChu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú: Chỉ số bình thường"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:background="#F5F5F5"
+            android:padding="12dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Mã đơn thuốc -->
+        <TextView
+            android:id="@+id/tvMaDon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã đơn thuốc: DT001"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Tên thuốc -->
+        <TextView
+            android:id="@+id/tvTenThuoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên thuốc: Paracetamol"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Liều dùng -->
+        <TextView
+            android:id="@+id/tvLieuDung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liều dùng: 500mg x 3 lần/ngày"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Ghi chú -->
+        <TextView
+            android:id="@+id/tvGhiChu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú: Uống sau ăn"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:background="#F5F5F5"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

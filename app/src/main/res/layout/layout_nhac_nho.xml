@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+    <!-- Toolbar với nút back -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0D47A1"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back_white_24dp">>
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhắc Nhở Dùng Thuốc"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp" />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+        <!-- Tên thuốc -->
+        <EditText
+            android:id="@+id/edtMedicineName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên thuốc"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            android:textSize="20dp"
+            android:background="@android:drawable/edit_text"/>
+
+
+        <!-- Liều lượng -->
+        <EditText
+            android:id="@+id/edtDosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Liều lượng (VD: 1 viên)"
+            app:layout_constraintTop_toBottomOf="@id/edtMedicineName"
+            android:layout_marginTop="12dp"
+            android:textSize="20dp"
+            android:background="@android:drawable/edit_text"/>
+
+
+        <!-- Giờ uống -->
+        <EditText
+            android:id="@+id/edtGio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@android:drawable/edit_text"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Chọn giờ (HH:MM)"
+            android:textSize="20dp" />
+        <!-- Lặp lại -->
+        <CheckBox
+            android:id="@+id/cbRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Lặp lại hằng ngày"
+            android:layout_marginTop="12dp"/>
+
+
+        <!-- Bật thông báo -->
+        <Switch
+            android:id="@+id/snThongBao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bật thông báo"
+            android:checked="true"
+            app:layout_constraintTop_toBottomOf="@id/cbRepeat"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="12dp"
+            android:textSize="20dp"/>
+
+
+        <!-- Nút lưu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:text="Thêm"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:backgroundTint="#11bc16"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sửa"
+                android:textSize="16dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#ffb50a"
+                android:textStyle="bold"
+                android:id="@+id/btnSua"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xóa"
+                android:textSize="16dp"
+                android:backgroundTint="#ff1e39"
+                android:textStyle="bold"
+                android:id="@+id/btnXoa"/>
+
+        </LinearLayout>
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvDanhSach"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</LinearLayout>

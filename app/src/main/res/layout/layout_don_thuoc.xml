@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.MainDonThuoc">
+    <!-- Toolbar với nút back -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0D47A1"
+        app:titleTextColor="@android:color/white"
+        app:title="Đơn thuốc"
+        app:titleMarginStart="80dp"
+        app:navigationIcon="@drawable/ic_arrow_back_white_24dp">>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+
+        <!-- mã đơn thuốc -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã đơn thuốc"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+
+        <EditText
+            android:id="@+id/edtma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mã đơn thuốc"
+            android:backgroundTint="#BDBDBD"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <!-- tên đơn thuốc -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên đơn thuốc"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+
+        <EditText
+            android:id="@+id/edtten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên đơn thuốc"
+            android:backgroundTint="#BDBDBD"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"/>
+        <!-- liều dùng -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liều dùng"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+
+        <EditText
+            android:id="@+id/edtlieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập liều dùng"
+            android:backgroundTint="#BDBDBD"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"/>
+        <!-- ghi chú -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+
+        <EditText
+            android:id="@+id/edtghichu"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Nhập ghi chú"
+            android:backgroundTint="#BDBDBD"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+
+
+
+
+        <!-- Nhóm nút Lưu / Sửa / Xóa -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+
+            <Button
+                android:id="@+id/btnLuu"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Lưu"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1976D2"
+                android:layout_marginEnd="8dp"
+                android:padding="12dp"/>
+
+
+            <Button
+                android:id="@+id/btnSua"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Sửa"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FFC107"
+                android:layout_marginEnd="8dp"
+                android:padding="12dp"/>
+
+
+            <Button
+                android:id="@+id/btnXoa"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Xóa"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#F44336"
+                android:padding="12dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lvDonThuoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFAEB"
+        android:textColor="#090909"
+        android:textSize="25sp" />
+
+
+</LinearLayout>

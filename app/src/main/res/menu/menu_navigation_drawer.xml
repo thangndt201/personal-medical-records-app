@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_thong_tin_bn"
+        android:icon="@drawable/outline_account_circle_24"
+        android:title="Thông tin bệnh nhân" />
+
+    <item
+        android:id="@+id/nav_tim_kiem"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Tìm kiếm" />
+
+    <item
+        android:id="@+id/nav_kq_xet_nghiem"
+        android:icon="@android:drawable/ic_menu_slideshow"
+        android:title="Kết quả xét nghiệm" />
+
+    <item
+        android:id="@+id/nav_nhap_benh_an"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Nhập bệnh án" />
+
+    <item
+        android:id="@+id/nav_don_thuoc"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Đơn thuốc" />
+
+    <item
+        android:id="@+id/nav_lich_hen"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Lịch hẹn" />
+
+    <item
+        android:id="@+id/nav_nhac_nho"
+        android:icon="@drawable/baseline_add_alarm_24"
+        android:title="Nhắc nhở" />
+
+    <item
+        android:id="@+id/nav_xuat_in"
+        android:icon="@drawable/printing"
+        android:title="Xuất &amp; In" />
+    <item
+        android:id="@+id/nav_thong_ke"
+        android:icon="@drawable/outline_article_24"
+        android:title="Thống kê" />
+
+    <group android:id="@+id/group_other">
+        <item
+            android:id="@+id/nav_quan_ly_tai_khoan"
+            android:icon="@drawable/ic_manage_accounts_24"
+            android:title="Quản lý tài khoản người dùng" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout_24"
+            android:title="Đăng xuất" />
+    </group>
+
+</menu>

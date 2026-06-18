@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F5FF">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0D47A1"
+        app:title="Xuất và In dữ liệu"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back_white_24dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Chọn loại dữ liệu -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn dữ liệu cần xuất/in:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="16dp" />
+
+            <RadioGroup
+                android:id="@+id/rgLoaiDuLieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbBenhNhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Danh sách bệnh nhân"
+                    android:textSize="16sp"
+                    android:padding="12dp" />
+
+                <RadioButton
+                    android:id="@+id/rbLichHen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lịch tái khám"
+                    android:textSize="16sp"
+                    android:padding="12dp" />
+
+                <RadioButton
+                    android:id="@+id/rbDonThuoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đơn thuốc"
+                    android:textSize="16sp"
+                    android:padding="12dp" />
+
+                <RadioButton
+                    android:id="@+id/rbKetQuaXN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kết quả xét nghiệm"
+                    android:textSize="16sp"
+                    android:padding="12dp" />
+
+                <RadioButton
+                    android:id="@+id/rbBenhAn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bệnh án"
+                    android:textSize="16sp"
+                    android:padding="12dp" />
+            </RadioGroup>
+
+            <!-- Nút xuất PDF -->
+            <Button
+                android:id="@+id/btnXuatPDF"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Xuất PDF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:backgroundTint="#1976D2"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="32dp" />
+
+            <!-- Nút in trực tiếp -->
+            <Button
+                android:id="@+id/btnIn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="In trực tiếp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

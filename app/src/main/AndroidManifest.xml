@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppQuanLyBenhAnCaNhan">
+        <activity
+            android:name=".UI.MainXuatIn"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainThongKeChiTiet"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainThongKeChiTiet"
+            android:exported="false" />
+        <activity
+            android:name=".model.SearchResult"
+            android:exported="false" /> <!-- Launcher Activity -->
+        <activity
+            android:name=".UI.MainLogin"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Admin/Main screens -->
+        <activity
+            android:name=".UI.MainHome"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainRegister"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainQuanLyThongTinBenhNhan"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainQuanLyKetQuaXetNghiem"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainNhapBenhAn"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainDonThuoc"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainDatLichHenTaiKham"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainNhacNho"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainXuatIn"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainQuanLyTaiKhoan"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainUserHome"
+            android:exported="false" />
+        <activity
+            android:name=".UI.user.MainCapNhatThongTinUser"
+            android:exported="false" />
+        <activity
+            android:name=".UI.user.MainUserThongTin"
+            android:exported="false" />
+        <activity
+            android:name=".UI.user.MainUserXemKetQuaXetNghiem"
+            android:exported="false" />
+        <activity
+            android:name=".UI.user.MainUserXemBenhAn"
+            android:exported="false" />
+        <activity
+            android:name=".UI.user.MainUserDonThuoc"
+            android:exported="false" />
+        <activity
+            android:name=".UI.user.MainUserXemLichTaiKham"
+            android:exported="false" />
+        <activity
+            android:name=".UI.user.MainUserNhacNhoUongThuoc"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainTimKiem"
+            android:exported="false" />
+    </application>
+
+</manifest>

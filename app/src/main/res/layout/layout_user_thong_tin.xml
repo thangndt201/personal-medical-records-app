@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFD">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#009688"
+            app:titleTextColor="@android:color/white"
+            app:navigationIcon="@drawable/ic_arrow_back_white_24dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THÔNG TIN CÁ NHÂN"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+        </androidx.appcompat.widget.Toolbar>
+        <!-- Tiêu đề chính -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- Card thông tin tài khoản -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="THÔNG TIN TÀI KHOẢN"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2E7D32"
+                        android:layout_marginBottom="16dp" />
+
+                    <TextView
+                        android:id="@+id/tvUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tên đăng nhập: -"
+                        android:textSize="17sp"
+                        android:textColor="#333333"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:background="@drawable/item_background"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:id="@+id/tvFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Họ và tên: -"
+                        android:textSize="17sp"
+                        android:textColor="#333333"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:background="@drawable/item_background"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:id="@+id/tvPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Số điện thoại: -"
+                        android:textSize="17sp"
+                        android:textColor="#333333"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:background="@drawable/item_background"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email: -"
+                        android:textSize="17sp"
+                        android:textColor="#333333"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:background="@drawable/item_background" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card thông tin bệnh nhân -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="THÔNG TIN BỆNH NHÂN"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2E7D32"
+                        android:layout_marginBottom="16dp" />
+
+                    <TextView
+                        android:id="@+id/tvMaHoSo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mã hồ sơ: -"
+                        android:textSize="17sp"
+                        android:textColor="#333333"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:background="@drawable/item_background"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:id="@+id/tvHoTenPatient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Họ tên: -"
+                        android:textSize="17sp"
+                        android:textColor="#333333"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:background="@drawable/item_background"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:id="@+id/tvGioiTinh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Giới tính: -"
+                        android:textSize="17sp"
+                        android:textColor="#333333"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:background="@drawable/item_background"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:id="@+id/tvNgaySinh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ngày sinh: -"
+                        android:textSize="17sp"
+                        android:textColor="#333333"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:background="@drawable/item_background"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:id="@+id/tvQueQuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Quê quán: -"
+                        android:textSize="17sp"
+                        android:textColor="#333333"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:background="@drawable/item_background"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:id="@+id/tvCccd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CCCD: -"
+                        android:textSize="17sp"
+                        android:textColor="#333333"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:background="@drawable/item_background"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:id="@+id/tvSdtPatient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SĐT: -"
+                        android:textSize="17sp"
+                        android:textColor="#333333"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:background="@drawable/item_background" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

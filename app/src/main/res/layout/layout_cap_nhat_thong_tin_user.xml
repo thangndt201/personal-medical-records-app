@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6fcff"
+    android:padding="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật thông tin bệnh nhân"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#03B6CA"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Họ tên (đã có từ đăng ký → chỉ hiển thị, không sửa) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Họ tên:"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tvHoTen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:background="#f0f0f0" />
+        </LinearLayout>
+
+        <!-- Giới tính (đã chọn lúc đăng ký → chỉ hiển thị) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Giới tính:"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tvGioiTinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:background="#f0f0f0" />
+        </LinearLayout>
+
+        <!-- SĐT (đã nhập lúc đăng ký → chỉ hiển thị) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="SĐT:"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tvSDT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:background="#f0f0f0" />
+        </LinearLayout>
+
+        <!-- Năm sinh (user tự nhập) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Năm sinh:"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/edtNamSinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="dd/mm/yyyy"
+                android:focusable="false"
+                android:clickable="true"
+                android:background="@android:drawable/edit_text"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Quê quán (user tự nhập) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Quê quán:"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/edtQueQuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- CCCD (user tự nhập) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="CCCD:"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/edtCCCD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:background="@android:drawable/edit_text"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Nút lưu -->
+        <Button
+            android:id="@+id/btnLuuThongTin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lưu thông tin"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

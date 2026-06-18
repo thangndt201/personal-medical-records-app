@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F5FF">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#6A1B9A"
+        app:title="Nhắc nhở uống thuốc"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back_white_24dp" />
+
+    <!-- Danh sách nhắc nhở -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMedication"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="16dp"
+        android:scrollbars="vertical" />
+
+    <!-- Thông báo khi chưa có dữ liệu (ẩn ban đầu) -->
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Chưa có lịch nhắc nhở uống thuốc.\nVui lòng liên hệ bác sĩ để được kê đơn."
+        android:textSize="18sp"
+        android:textColor="#888888"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_margin="32dp" />
+
+</LinearLayout>
